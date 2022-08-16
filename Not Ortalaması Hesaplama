@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        // Değişkenleri Oluştur
+        int mat,fizik,kimya,trk,tarih,mzk,ortalama;
+
+        // Scanner sınıfı tanımlandı
+        Scanner inp= new Scanner(System.in);
+
+        //Kullanıcıdan Değer Al
+
+        System.out.print("Matematik Notun : ");
+        mat=inp.nextInt();
+
+        System.out.print("Fizik Notun : ");
+        fizik= inp.nextInt();
+
+        System.out.print("Kimya Notun : ");
+        kimya= inp.nextInt();
+
+        System.out.print("Turkce Notun : ");
+        trk=inp.nextInt();
+
+        System.out.print("Tarih Notun : ");
+        tarih= inp.nextInt();
+
+        System.out.print("Muzik Notun : ");
+        mzk=inp.nextInt();
+
+
+        ortalama=(mat+fizik+kimya+trk+tarih+mzk);
+        double sonuc = ortalama/6.0;
+        boolean kaldi = ortalama<60;
+        boolean gecti = ortalama>60;
+        boolean sindur = kaldi||gecti;
+        String str = (sindur) ? "Kaldi" : "Gecti";
+
+        System.out.println("Ortalaman : " + sonuc);
+        System.out.println(str);
+    }
+}
