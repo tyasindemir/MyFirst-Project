@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double fyt,toplamft,kdf;
+
+
+        Scanner kdv = new Scanner(System.in);
+        System.out.println("Fiyat Gir :");
+        fyt= kdv.nextDouble();
+        toplamft = fyt*0.18;
+        kdf= fyt + toplamft;
+        double str = fyt>=1000 ? 0.08:0.18 ;
+
+        System.out.println("Kdvli tutar : " + kdf);
+        System.out.println("Kdvsiz tutar : " + fyt);
+        System.out.println("Eklenen tutar : " + toplamft);
+        System.out.print("Kdv Miktari : " + str);
+        
+
+
+    }
+}
