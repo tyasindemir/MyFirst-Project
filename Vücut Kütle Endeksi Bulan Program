@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double boy,body;
+        int kilo;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Boyunuzu Giriniz : ");
+        boy=inp.nextDouble();
+        System.out.print("Kilonuzu Giriniz : ");
+        kilo=inp.nextInt();
+
+        body=kilo/(boy*boy);
+        System.out.println("Vucut Indexiniz : " + body);
+
+
+    }
+}
