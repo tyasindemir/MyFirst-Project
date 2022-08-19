@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int r,aci ;
+        double p=3.14,meraci;
+
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Yaricapi Giriniz : ");
+        r= inp.nextInt();
+        System.out.print("Aci Gir : ");
+        aci=inp.nextInt();
+        /*
+        double alan=r*r*p;
+        double cevre= 2*p*r;
+        System.out.println("Alan : "+alan);
+        System.out.println("Cevre : "+cevre);
+        */
+        meraci= (p*r*r*aci)/360;
+        System.out.println(meraci);
+
+
+    }
+}
