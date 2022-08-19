@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double armut=2.14 , elma=3.67 , domates=1.11 , muz=0.95 , patlican=5,a,b,c,d,e,tutar ;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Armut Kac Kilo : ");
+        a=inp.nextDouble();
+        System.out.print("Elma Kac Kilo : ");
+        b=inp.nextDouble();
+        System.out.print("Domates Kac Kilo : ");
+        c=inp.nextDouble();
+        System.out.print("Muz Kac Kilo : ");
+        d=inp.nextDouble();
+        System.out.print("Patlican Kac Kilo : ");
+        e=inp.nextDouble();
+        tutar=(a*armut)+(b*elma)+(c*domates)+(d*muz)+(e*patlican);
+        System.out.println("Toplam Tutar : "+tutar+"TL");
+
+    }
+}
