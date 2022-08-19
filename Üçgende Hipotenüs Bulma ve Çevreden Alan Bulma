@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double a,b,c,alan,hipo;
+        Scanner ucg = new Scanner(System.in);
+        System.out.println("Kenar Gir : ");
+        a= ucg.nextInt();
+        System.out.println("Kenar Gir : ");
+        b= ucg.nextInt();
+        System.out.println("Kenar Gir : ");
+        c=ucg.nextInt();
+
+        /*
+        ???
+        int cevre= a+b+c,u=cevre/2,alan_karesi=u*(u-a)*(u-b)*(u-c);
+        double alan=Math.sqrt(alan_karesi);
+        System.out.println("Alan: " +alan);
+        */
+
+
+        /*
+        Videodaki Hipotenüs Bulan Kısım;
+        c=a*a+b*b;
+        hipo=Math.sqrt(c);
+        alan=(a*b)/2;
+        System.out.println(c);
+        System.out.println("Hipotenus Uzunlugu : " + hipo);
+        */
+
+
+        System.out.println("Alan : " + alan);
+
+
+    }
+}
