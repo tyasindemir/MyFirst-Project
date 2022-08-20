@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    //Girilen yılın artık olup olmadığını gösteren program
+    //4'e tam bölünen yıllar artık yıldır
+    //100'e tam bölünen yıllar artık yıl değildir
+    //400'e tam bölünen yıllar artık yıldır.
+    public static void main(String[] args) {
+        Scanner inp=new Scanner(System.in);
+        int yil;
+        System.out.println( "Yil Giriniz : ");
+        yil=inp.nextInt();
+
+        if (yil % 400 ==0)
+        {
+            System.out.println(yil + " yili artik bir yildir."  );
+        }
+        else if (yil % 100 == 0)
+        {
+            System.out.println(yil+ " artik yil degildir .");
+        }
+        else if (yil % 4 == 0)
+        {
+            System.out.println(yil + " yili artik bir yildir." ) ;
+        }
+        else
+        {
+            System.out.println(yil + " artik yil degildir" );
+        }
+
+
+    }
+}
