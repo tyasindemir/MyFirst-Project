@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int select,newPass;
+        String userName,password;
+        Scanner inp =new Scanner(System.in);
+
+
+        System.out.print("Kullanici Adinizi Giriniz : ");
+        userName=inp.nextLine();
+        System.out.print("Sifrenizi Giriniz : ");
+        password= inp.nextLine();
+
+        if (userName.equals("Rai4TEG") && password.equals("123456")) {
+            System.out.println("Giris Yaptiniz !");
+        }
+
+        else {
+            System.out.println("Sifreniz Hatali ! ");
+
+        }
+        System.out.println("Sifrenizi Degistirmek Istermisiniz ?\n 1: Evet \n 2: Hayir");
+        select=inp.nextInt();
+
+        if (select==2){
+            System.out.println("Tekrar Giris Yapiniz : ");
+
+        }
+        else if (select==1){
+            System.out.println("Yeni Sifre Giriniz :");
+            newPass=inp.nextInt();
+            if (newPass==123456){
+                System.out.println("Yeni Sifreniz Eskisiyle Ayni Olamaz !\nYeni Sifre Giriniz :");
+                newPass= inp.nextInt();
+                System.out.println("Sifreniz Basariyla Degistirildi !");
+            }
+
+
+
+        }
+
+
+
+    }
+}
