@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int mat,fizik,turkce,kimya,muzik;
+
+        Scanner inp=new Scanner(System.in);
+        System.out.println("Matematik Notunu Gir : ");
+        mat=inp.nextInt();
+        System.out.println("Fizik Notunu Gir : ");
+        fizik=inp.nextInt();
+        System.out.println("Turkce Notunu Gir : ");
+        turkce=inp.nextInt();
+        System.out.println("Kimya Notunu Gir : ");
+        kimya=inp.nextInt();
+        System.out.println("Muzik Notunu Gir : ");
+        muzik=inp.nextInt();
+
+
+        double avarage=(mat+fizik+turkce+kimya+muzik)/5;
+       /* if (avarage >= 55){
+            System.out.println("Gecti\nOrtalaman : "+avarage);
+        }
+        else {
+            System.out.println("Kaldi\nOrtalaman : "+avarage);
+        }
+        */
+        if ((avarage>=0)&&(avarage<=100)){
+            System.out.println("Gecti\nOrtalaman : "+avarage);
+        }
+        else {
+            System.out.println("Kaldi\nOrtalaman : "+avarage);
+        }
+
+
+    }
+}
