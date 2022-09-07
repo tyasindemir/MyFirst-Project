@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int range, age, type;
+        double s, m, l, price, brb = 0.2, downprice,dp2,tp;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("** Ucak Bilet Hesaplama Programina Hos Geldiniz **");
+        System.out.print("Mesafeyi KM Cinsinden Giriniz : ");
+        range = inp.nextInt();
+        System.out.print("Yasinizi Giriniz : ");
+        age = inp.nextInt();
+        System.out.println("Yolculuk Tipini Giriniz : \n 1- Tek Yon 2- Gidis Donus");
+        type = inp.nextInt();
+
+        price = range * 0.1;
+
+        if (type == 1) {
+            if (age <= 12) {
+                s = price * 0.5;
+                System.out.println("Yas Indirimi : " + s);
+                downprice = price - s;
+                System.out.println("Tutariniz" + downprice);
+
+            } else if ((age > 12) && (age <= 24)) {
+                m = price * 0.1;
+                System.out.println("Yas Indirimi : " + m);
+                downprice = price - m;
+                System.out.println("Tutariniz : " + downprice);
+
+            } else if (age >= 25 && age < 65) {
+                System.out.println("Tutariniz :" + price);
+
+            } else if (age >= 65) {
+                l = price * 0.3;
+                System.out.println("Yas Indirimi : " + l);
+                downprice = price - l;
+                System.out.println("Tutariniz : " + downprice);
+
+            }
+        } else if (type == 2) {
+            if (age <= 12) {
+                s = price * 0.5;
+                System.out.println("Yas Indirimi : " + s);
+                downprice = price - s;
+                dp2=downprice*brb;
+                tp=(downprice-dp2)*2;
+                System.out.println("Tutariniz" +tp);
+
+            } else if ((age > 12) && (age <= 24)) {
+                m = price * 0.1;
+                System.out.println("Yas Indirimi : " + m);
+                downprice = price - m;
+                dp2=downprice*brb;
+                tp=(downprice-dp2)*2;
+                System.out.println("Tutariniz : " +tp);
+
+            } else if (age >= 25 && age < 65) {
+                System.out.println("Tutariniz :" + (price*brb));
+
+            } else if (age >= 65) {
+                l = price * 0.3;
+                System.out.println("Yas Indirimi : " + l);
+                downprice = price - l;
+                dp2=downprice*brb;
+                tp=(downprice-dp2)*2;
+                System.out.println("Tutariniz : " +tp);
+
+            }
+        } else {
+            System.out.println("Hatali Giris Yaptiniz !!!");
+        }
+    }
+}
