@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+       /* int n;
+        int toplam=0;
+        Scanner kb = new Scanner(System.in);
+
+
+        do {
+            System.out.print("Sayi Giriniz :");
+            n=kb.nextInt();
+            if (n % 2 ==1){
+                toplam+=n;
+
+            }
+        }while (n>0);
+
+        System.out.print("Sayilarin Toplami : "+toplam);*/
+        Scanner kb = new Scanner(System.in);
+
+        int n, toplam = 0;
+
+        do {
+            System.out.print("SAYI GİRİNİZ: ");
+            n = kb.nextInt();
+            if (n % 2 == 1){
+                break;
+            }else if(n % 4 == 0){
+                toplam += n;
+            }
+        } while (n > 0);
+
+        System.out.print("4'ün katları olan sayıların toplamı = " + toplam );
+
+    }
+}
